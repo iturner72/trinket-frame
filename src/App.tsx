@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Frame from './components/Frame';
 
-function App() {
+const App: React.FC = () => {
+    const frameOptions = [
+        { label: 'Rearden Steel', image: '/images/trinket1.png' },
+        { label: 'Eth Head', image: '/images/trinket2.png' },
+        { label: 'Gold Bug', image: '/images/trinket3.png' },
+        { label: 'Girl Gamer', image: '/images/trinket4.png' },
+        { label: 'Aquaman', image: '/images/trinket5.png' },
+        { label: 'Lavender', image: '/images/trinket6.png' },
+        { label: 'Rose Gold', image: '/images/trinket7.png' },
+        { label: 'Tether IP Theft', image: '/images/trinket8.png' },
+    ]; 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Frame options={frameOptions} />
     </div>
   );
 }
