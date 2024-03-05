@@ -1,18 +1,22 @@
 import React from 'react';
 import './App.css';
+import dataUris from './services/data_uris.json';
 import Frame from './components/Frame';
 
 const App: React.FC = () => {
     const frameOptions = [
-        { label: 'Rearden Steel', image: '/images/trinket1.png' },
-        { label: 'Eth Head', image: '/images/trinket2.png' },
-        { label: 'Gold Bug', image: '/images/trinket3.png' },
-        { label: 'Girl Gamer', image: '/images/trinket4.png' },
-        { label: 'Aquaman', image: '/images/trinket5.png' },
-        { label: 'Lavender', image: '/images/trinket6.png' },
-        { label: 'Rose Gold', image: '/images/trinket7.png' },
-        { label: 'Tether IP Theft', image: '/images/trinket8.png' },
+        { label: 'Rearden Steel', image: dataUris['trinket1'] },
+        { label: 'Eth Head', image: dataUris['trinket2'] },
+        { label: 'Gold Bug', image: dataUris['trinket3'] },
+        { label: 'Girl Gamer', image: dataUris['trinket4'] },
+        { label: 'Aquaman', image: dataUris['trinket5'] },
+        { label: 'Lavender', image: dataUris['trinket6'] },
+        { label: 'Rose Gold', image: dataUris['trinket7'] },
+        { label: 'Tether IP Theft', image: dataUris['trinket8']},
     ]; 
+
+    console.log(dataUris);
+    console.log(dataUris['trinket1']);
 
   return (
     <div className="App">

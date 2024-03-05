@@ -9,8 +9,9 @@ async fn index() -> impl Responder {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="fc:frame" content="vNext" />
-    <meta property="fc:frame:image" content="https://exemple.com/path/to/frame-image.jpg" />
-    <meta property="og:image" content="https:://example.com/path/to/og-image.jpg" />
+    <meta property="fc:frame:image" content="/images/trinket1.png" />
+    <meta property="og:image" content="/images/trinket2.png" />
+    <meta property="og:title" content="React App" />
     <title>Trinket Frame</title>
 </head>
 <body>
