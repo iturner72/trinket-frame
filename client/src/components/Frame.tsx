@@ -69,7 +69,7 @@ const Frame: React.FC<FrameProps> = ({ options }) => {
   
           <div className="flex flex-col items-center justify-center p-4 bg-slate-700 min-h-screen bg-slate-700">
             <img src={options[currentIndex].image} alt="Frame Content" className="max-w-full h-auto rounded-lg shadow-md" />
-            <div className="flex items-center justify-between w-full pt-6">
+            <div className="flex items-center justify-center space-x-8 w-full pt-6">
               <button
                 className="bg-emerald-500 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded"
                 onClick={handleBack}
