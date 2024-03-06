@@ -15,9 +15,6 @@ const App: React.FC = () => {
         { label: 'Tether IP Theft', image: dataUris['trinket8']},
     ]; 
 
-    console.log(dataUris);
-    console.log(dataUris['trinket1']);
-
   return (
     <div className="App">
       <Frame options={frameOptions} />
